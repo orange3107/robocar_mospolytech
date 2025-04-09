@@ -1,0 +1,19 @@
+<sdf version="1.6">
+    <world name="gazebo_ros_gps_sensor_world">
+      <include>
+        <uri>model://ground_plane</uri>
+      </include>
+      <include>
+        <uri>model://sun</uri>
+      </include>
+      <spherical_coordinates>
+        <latitude_deg>31.0461</latitude_deg>
+        <longitude_deg>34.8516</longitude_deg>
+        <elevation>0</elevation>
+          <!-- currently gazebo has a bug: instead of outputing lat, long, altitude in ENU
+          (x = East, y = North and z = Up) as the default configurations, it's outputting (-E)(-N)U,
+          therefore we rotate the default frame 180 so that it would go back to ENU -->
+          <heading_deg>180</heading_deg>
+      </spherical_coordinates>
+    </world>
+</sdf>

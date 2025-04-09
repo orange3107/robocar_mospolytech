@@ -1,0 +1,9 @@
+distLidar: '1.0'
+heightLidar: '2.0'
+length: '4.0'
+name: autocar
+wheelAngles: '[[0.0, 15.0, 30.0, 60.0, 90.0], [0.0, 0.20000000298023224, 0.5, 0.800000011920929,
+  1.0]]'
+wheelBase: '3.0'
+wheeltrack: '5.0'
+width: '6.0'

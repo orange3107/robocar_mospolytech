@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<sdf version="1.5">
+
+  <model name="autocar">
+    <pose>0 0 0.0 0 0 0</pose>
+   
+
+    <link name='base_link' />
+    
+    <joint name="velodyne_joint" type="fixed">
+      <parent>base_link</parent>
+      <child>velodyne</child>
+      <pose>0 0.1 1.85 0 0 0</pose>
+      <axis>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+
+    <joint name="odom_joint" type="fixed">
+      <parent>base_link</parent>
+      <child>odometry</child>
+      <pose>0 -1.33 0 0 0 0</pose>
+      <axis>
+        <xyz>0 0 1</xyz>
+      </axis>
+    </joint>
+
+
+
+  <link name="odometry" />
+
+
+  <link name="velodyne" />
+
+    
+  </model>
+
+</sdf>
